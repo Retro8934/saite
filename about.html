@@ -2,11 +2,119 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О проекте</title>
+    <style>
+        /* Те же стили, что и в index.html — шрифт растёт от ширины экрана */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            /* базовый размер шрифта зависит от ширины экрана */
+            font-size: 14px;
+        }
+
+        /* На узких экранах (кнопочные телефоны) — мельче */
+        @media (max-width: 240px) {
+            html { font-size: 12px; }
+        }
+
+        /* Планшеты и широкие экраны — крупнее */
+        @media (min-width: 480px) {
+            html { font-size: 16px; }
+        }
+
+        @media (min-width: 768px) {
+            html { font-size: 18px; }
+        }
+
+        @media (min-width: 1024px) {
+            html { font-size: 20px; }
+        }
+
+        body {
+            background: #ffffff;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            margin: 0.5rem;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            text-align: center;
+            margin: 0.8rem 0;
+        }
+
+        h2 {
+            font-size: 1.15rem;
+            margin: 0.8rem 0 0.4rem 0;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #000000;
+            margin: 0.8rem 0;
+        }
+
+        a {
+            color: #0000ee;
+            text-decoration: underline;
+            font-size: 1.05rem;
+            display: block;
+            padding: 0.5rem 0;
+        }
+
+        a:visited {
+            color: #551a8b;
+        }
+
+        .footer {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
+
     <h1>О проекте</h1>
-    <p>Здесь будет описание проекта.</p>
-    <p><a href="index.html">← Назад</a></p>
+
+    <p>
+        Это сайт для кнопочных телефонов. Он сделан простым и лёгким,
+        чтобы быстро открывался даже на медленном интернете и работал
+        на любом устройстве с браузером.
+    </p>
+
+    <h2>Что здесь будет</h2>
+
+    <p>
+        Планируется добавить полезные материалы, простые игры и другие
+        интересные вещи. Пока что сайт в разработке, но основа уже готова.
+    </p>
+
+    <h2>Контакты</h2>
+
+    <p>
+        Связаться с автором можно будет позже — раздел пока в разработке.
+    </p>
+
+    <hr>
+
+    <a href="index.html">← На главную</a>
+
+    <div class="footer">
+        <p>Спасибо за посещение!</p>
+    </div>
+
 </body>
 </html>
